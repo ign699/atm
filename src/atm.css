@@ -1,0 +1,8 @@
+.atm {
+  width: 300px;
+}
+
+.value-display {
+  display: flex;
+  justify-content: flex-end;
+}

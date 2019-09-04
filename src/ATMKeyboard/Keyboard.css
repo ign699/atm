@@ -1,0 +1,12 @@
+.buttons {
+  display: flex;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.buttons-right {
+  width: 20%;
+}
