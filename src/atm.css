@@ -1,8 +1,14 @@
 .atm {
-  width: 300px;
+  width: 100%;
+  max-width: 550px;
 }
 
 .value-display {
   display: flex;
   justify-content: flex-end;
+}
+
+.options {
+  display: flex;
+  margin-bottom: 8px;
 }

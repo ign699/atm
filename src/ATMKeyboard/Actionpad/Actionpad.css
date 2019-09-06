@@ -1,0 +1,14 @@
+.actionpad {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 20%;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 399px) {
+    .actionpad {
+        flex-direction: row;
+        width: 100%;
+    }
+}

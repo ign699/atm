@@ -1,0 +1,20 @@
+.number-display {
+    margin: 8px 5px;
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.number-display span {
+    display: flex;
+    background:white;
+    font-size: 11px;
+    position: absolute;
+    top: -7.5px;
+    left: 5px;
+    letter-spacing: 0px;
+}
