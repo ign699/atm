@@ -18,7 +18,7 @@ const Button = ({
 Button.propTypes = {
   value: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.number
+    PropTypes.number,
   ]),
   onClick: PropTypes.func,
   className: PropTypes.string,
