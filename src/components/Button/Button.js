@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.css';
+import ButtonTypes, { NORMAL_BUTTON_TYPE } from './ButtonTypes';
 
 const Button = ({
-  value, onClick, className, active,
+  value, onClick, active, type,
 }) => (
   <button
     type="button"
     onClick={onClick}
     disabled={value === null}
-    className={`btn btn-outline-secondary ${className} ${active && 'active'}`}
+    className={`btn ${ButtonTypes[type]} ${!!active && 'active'}`}
   >
     {value}
   </button>
@@ -21,14 +22,14 @@ Button.propTypes = {
     PropTypes.number,
   ]),
   onClick: PropTypes.func,
-  className: PropTypes.string,
+  type: PropTypes.oneOf(Object.keys(ButtonTypes)),
   active: PropTypes.bool,
 };
 
 Button.defaultProps = {
   value: null,
   onClick: () => {},
-  className: '',
+  type: NORMAL_BUTTON_TYPE,
   active: false,
 };
 

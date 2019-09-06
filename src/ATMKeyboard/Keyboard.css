@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 399px) {
+@media (max-width: 399px) {
   .buttons {
     flex-direction: column;
   }

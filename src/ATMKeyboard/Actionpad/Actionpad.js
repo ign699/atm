@@ -4,23 +4,28 @@ import PropTypes from 'prop-types';
 import Button from '../../components/Button/Button';
 
 import './Actionpad.css';
+import {
+  ERROR_BUTTON_TYPE,
+  SUCCESS_BUTTON_TYPE,
+  WARNING_BUTTON_TYPE,
+} from '../../components/Button/ButtonTypes';
 
 
 const Actionpad = ({ action, backspace, clear }) => (
   <div className="actionpad">
     <Button
       onClick={action}
-      className="btn-outline-success"
+      type={SUCCESS_BUTTON_TYPE}
       value="Confirm"
     />
     <Button
       onClick={backspace}
-      className="btn-outline-warning"
+      type={WARNING_BUTTON_TYPE}
       value="Backspace"
     />
     <Button
       onClick={clear}
-      className="btn-outline-danger"
+      type={ERROR_BUTTON_TYPE}
       value="Clear"
     />
   </div>
